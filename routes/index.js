@@ -3,9 +3,12 @@ var router = express.Router();
 const { Octokit } = require("@octokit/rest");
 
 const octokit = new Octokit({
-  auth: "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",
+  auth: "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",
 });
 
+router.get('/',function(req,res,next) {
+  return res.end("home page")
+})
 
 /* GET home page. */
 router.get('/user/:username', function (req, res, next) {

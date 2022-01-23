@@ -3,7 +3,7 @@ var router = express.Router();
 const { Octokit } = require("@octokit/rest");
 
 const octokit = new Octokit({
-  auth: "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",
+  auth: "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",
 });
 
 router.get('/',function(req,res,next) {

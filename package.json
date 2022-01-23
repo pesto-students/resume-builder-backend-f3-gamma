@@ -17,6 +17,9 @@
     "morgan": "~1.9.1",
     "nodemon": "^2.0.15"
   },
+  "engines": {
+    "node": "v17.2.0"
+  },
   "main": "app.js",
   "author": "",
   "license": "ISC",

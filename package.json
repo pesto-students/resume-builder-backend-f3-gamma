@@ -23,5 +23,15 @@
   "main": "app.js",
   "author": "",
   "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pesto-students/resume-builder-backend-f3-gamma.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/pesto-students/resume-builder-backend-f3-gamma/issues"
+  },
+  "homepage": "https://github.com/pesto-students/resume-builder-backend-f3-gamma#readme",
   "description": ""
 }

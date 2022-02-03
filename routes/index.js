@@ -6,23 +6,26 @@ const octokit = new Octokit({
   auth: process.env.KEY,
 });
 
-router.get('/',function(req,res,next) {
-  return res.end("home page")
-})
 
-/* GET home page. */
+/* GET user details by user name. */
 router.get('/user/:username', function (req, res, next) {
+
+
   const getUserName = (req) => {
     return req.params.username
   }
 
   async function asyncCall(req) {
     console.log('calling');
-    const result = await octokit.request('GET /users/' + req.params.username)
-    // const repos = await octokit.request('https://api.github.com/users/fabpot/repos');
-    const repos = await octokit.request('GET /users/{username}/repos', {
+    const result = await octokit.request('GET /users/' + getUserName(req))
+    const repo = octokit.rest.repos.listForUser({
       username: req.params.username
+    });
+    const starred = await octokit.request('https://api.github.com/users/fabpot/starred');
+    const repos = await octokit.request('GET /users/{username}/repos', {
+      username: getUserName(req)
     })
+
 
     let repoData = repos.data.map((item) => {
       return { 

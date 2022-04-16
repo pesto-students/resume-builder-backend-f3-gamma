@@ -16,16 +16,21 @@ router.get('/user/:username', function (req, res, next) {
   }
 
   async function asyncCall(req) {
-    console.log('calling');
-    const result = await octokit.request('GET /users/' + getUserName(req))
-    const repo = octokit.rest.repos.listForUser({
-      username: req.params.username
-    });
-    const starred = await octokit.request('https://api.github.com/users/fabpot/starred');
-    const repos = await octokit.request('GET /users/{username}/repos', {
-      username: getUserName(req)
-    })
 
+    try {
+
+      var result = await octokit.request('GET /users/' + getUserName(req))
+      const repo = octokit.rest.repos.listForUser({
+        username: req.params.username
+      });
+      const starred = await octokit.request('https://api.github.com/users/fabpot/starred');
+      var repos = await octokit.request('GET /users/{username}/repos', {
+        username: getUserName(req)
+      })
+    } catch {
+      res.end(JSON.stringify("user not found", null, 2)) 
+      return ;
+    }
 
     let repoData = repos.data.map((item) => {
       return { 

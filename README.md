@@ -1,5 +1,7 @@
 
-``` +GithubResume App ```
+```diff +GithubResume App ```
+![logo](https://user-images.githubusercontent.com/76247705/164281339-5f386731-fbc6-4e55-85ec-71e43a50aae4.jpg)
+
 
 This App was designed for Github users to showcase their skills.
 # Table of Contents

@@ -1,5 +1,5 @@
 
-# Github Resume Maker Backend Server
+``` +GithubResume App ```
 
 Github resume maker api for getting every public details of all users, in the order that they signed up on GitHub. This list includes personal user accounts and organization accounts.
 ## Run Locally

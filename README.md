@@ -1,8 +1,16 @@
 
 ``` +GithubResume App ```
 
-Github resume maker api for getting every public details of all users, in the order that they signed up on GitHub. This list includes personal user accounts and organization accounts.
-## Run Locally
+This App was designed for Github users to showcase their skills.
+# Table of Contents
+1. Demo
+2. Installation
+3. Technology Stack
+4. Authors
+5. License
+
+# Demo
+[Live Demo](https://kind-meitner-2e6eeb.netlify.app/)
 
 Clone the project
 

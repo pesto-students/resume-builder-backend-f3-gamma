@@ -1,55 +1,58 @@
-```diff
-+GithubResume App 
-```
+
+# Github Resume Maker Backend Server
 
 ![logo](https://user-images.githubusercontent.com/76247705/164281597-2cb70d17-24e7-41a2-ad3c-da3ac06c67a6.jpg)
 
 
+Github resume maker api for getting every public details of all users, in the order that they signed up on GitHub. This list includes personal user accounts and organization accounts.
 
-This App was designed for Github users to showcase their skills, contributions and Top Repositories. This online resume builder simplifies the work of making a resume for job seekers by helping them in creating a professional resume. Generate your Github profile overview as Resume
 # Table of Contents
 1. Demo
 2. Installation
-3. Technology Stack
-4. Authors
-5. License
+3. parameter
+4. Technology Stack
+5. Authors
+6. License
 
 
+## Demo 
+[Live Demo](https://github-resume-maker.herokuapp.com/user/fabpot)
 
 
-# Demo
+## Installation
 
-[Live Demo](https://kind-meitner-2e6eeb.netlify.app/)
+1. Clone the project
+```bash
+  git clone https://github.com/pesto-students/resume-builder-backend-f3-gamma.git
+```
+2. Set environment variables
+3. Go to the project directory
+```bash
+  cd resume-builder-backend-f3-gamma
+```
+4. Install dependencies
+```bash
+  npm install
+```
+5. Start the server
+```bash
+  npm run start
+```
+6. check from brower
+```bash
+  /user/{username}
+```
 
+## parameter 
 
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `username`      | `string` | **Required**.fetch details by username. |
 
-Please Note:
-1. We recommend using this App in google chrome.
-2. Use The App on Laptop/Desktop as of now.
-
-Test Credentials:
-> For users<br> 
-> * Enter GuthubUsername
-  <br>
-  
-  # Installation
-  1. Clone the repo
-   ```git clone https://github.com/pesto-students/resume-builder-frontend-f3-gamma.git```
-   2. Set environment variables
-   3. Innstall NPM packages
-   ```cd GithubResumeApp && npm install```
-   4. Run
-   ```npm start```
-   5. Open "http://localhost/3000" to view it in the browser
-   6. Run Test cases
-   ```npm test```
-   
-   
-   # Technology Stack
-   We tried to use a completely modern tech stack while testing out some new technologies that we had never used before. This resulted in a fast, performant, and easily-extensible web app that should be fairly future-proof for the coming next several years. We used:
-   * React
-   * Redux
+# Technology Stack
    * Node
+   * Express
+   * octakit
 
 
 # Authors
@@ -59,5 +62,3 @@ Test Credentials:
 
 # License
 [MIT]
-
-

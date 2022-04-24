@@ -9,7 +9,7 @@ Github resume maker api for getting every public details of all users, in the or
 # Table of Contents
 1. Demo
 2. Installation
-3. parameter
+3. Parameter
 4. Technology Stack
 5. Authors
 6. License
@@ -43,22 +43,22 @@ Github resume maker api for getting every public details of all users, in the or
   /user/{username}
 ```
 
-## parameter 
+## Parameter 
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `username`      | `string` | **Required**.fetch details by username. |
 
-# Technology Stack
+## Technology Stack
    * Node
    * Express
    * octakit
 
 
-# Authors
+## Authors
 * [Amit Kumar Singh]
 * [Ramshad Ken]
 
 
-# License
+## License
 [MIT]
